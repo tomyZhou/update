@@ -27,18 +27,17 @@
  3.在OnStop里面添加如下代码：
  UpdateFunGO.onStop(this);
  
- 4.在软件包里面的Update.java里根据你服务器返回的接口的实际情况，修改如下方法：
+ 4.在软件包里面的Update.java里根据你服务器返回的接口的实际情况，做具体的修改。下面是实例：
  
    private void interpretingData(String result) {
-   
    // 		JSONObject object = new JSONObject(result);
-   //
+   
    //            Log.i("OK",object.toString());
-   //
-   //            DownloadKey.changeLog = object.getString("changelog");
+   
    //            DownloadKey.version = object.optInt("version");
+   
    //            DownloadKey.apkUrl = object.getString("installUrl");
-   //            DownloadKey.build = object.getString("build");
+   
    //            DownloadKey.versionName = object.getString("versionShort");
    
    }
