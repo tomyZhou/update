@@ -1,23 +1,23 @@
-# update
-升级更新包
+  # update
+  升级更新包
 ========================================================================================
-功能：
-1、进入app时SplashActivity弹出提示升级的Dialog
-2、可以点击下载，或是取消下载
-3、下载可以配置是Dialog形式或是Notification形式
-4、可以支持手动检查更新
+  功能：
+  1.进入app时SplashActivity弹出提示升级的Dialog
+  2.可以点击下载，或是取消下载
+  3.下载可以配置是Dialog形式或是Notification形式
+  4.可以支持手动检查更新
 
 
-使用方法：
+  使用方法：
 
-1.在需要更新的页面（如SplashActivity）的OnCreate里面做如下操作：
+  1.在需要更新的页面（如SplashActivity）的OnCreate里面做如下操作：
 
   
-UpdateKey.DialogOrNotification=UpdateKey.WITH_DIALOG;   //通过Dialog来进行下载
-//UpdateKey.DialogOrNotification=UpdateKey.WITH_NOTIFITION;通过通知栏来进行下载(默认)
+  UpdateKey.DialogOrNotification=UpdateKey.WITH_DIALOG;   //通过Dialog来进行下载
+  //UpdateKey.DialogOrNotification=UpdateKey.WITH_NOTIFITION;通过通知栏来进行下载(默认)
 
- //url 填写服务器提供的检查更新的接口
-UpdateFunGO.init(this, url, null);
+  //url 填写服务器提供的检查更新的接口
+  UpdateFunGO.init(this, url, null);
 		
 		
 
@@ -48,7 +48,7 @@ UpdateFunGO.init(this, url, null);
 
 如果在你的SplashActivity里需要获取是否需要升级的状态的回调，再根据状态做一些业务操作，此时你可以这么做：
   
- public void checkUpdate() {
+	public void checkUpdate() {
       //下载方式:
         UpdateKey.DialogOrNotification=UpdateKey.WITH_DIALOG;   //通过Dialog来进行下载
       //UpdateKey.DialogOrNotification=UpdateKey.WITH_NOTIFITION;通过通知栏来进行下载(默认)
